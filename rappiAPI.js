@@ -33,7 +33,6 @@ async function getStore(lat, lng) {
 
     let resp = await fetch(lat, lng);
     let dados = resp.data.context_info.stores;
-    //console.log(dados);
 
     for (let store of dados) {
         obj.nome = store.name;
